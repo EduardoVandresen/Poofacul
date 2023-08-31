@@ -30,12 +30,13 @@ public class principal {
 				JOptionPane.showInternalMessageDialog(null, todos);
 			}if(op==3) {
 				String Artilheiro = "";
-				for(Time t1:lista) {
-					Artilheiro = t1.artilheiroTime();
+				for(Time t:lista) {
+					Artilheiro += t.artil();
 				}
+				JOptionPane.showInternalMessageDialog(null, Artilheiro);
 			}
 				
-			
+	
 		}while(op!=5);
 
 	}
