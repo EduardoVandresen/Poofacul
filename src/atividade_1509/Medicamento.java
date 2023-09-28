@@ -3,10 +3,10 @@ package atividade_1509;
 import javax.swing.JOptionPane;
 
 public class Medicamento {
-	String nome;
-	char contraind;
-	char ind;
-	char adm;
+	private String nome;
+	private char contraind;
+	private char ind;
+	private char adm;
 	
 	
 	

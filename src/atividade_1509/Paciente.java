@@ -9,14 +9,13 @@ public class Paciente {
 	private String nome;
 	String sintoma;
 	char sin;
-	char condsau;
 	private ArrayList<Medicamento> medicamentos = new ArrayList<Medicamento>();
 	
 	public void cadastra() {
 		nome = JOptionPane.showInputDialog("infome o nome do paciente:");
 		sintoma = JOptionPane.showInputDialog("informe o sintoma(gripe,febre ou nausea)");
 		sin = sintoma.toUpperCase().charAt(0);
-		condsau = JOptionPane.showInputDialog("informe a contraindicação(gripe,febre ou nausea)").toUpperCase().charAt(0);
+	
 	}
 	String exibirDadosPac(){
 		return "Paciente - " + nome + " está com " + sintoma + "\n" + medicamentos + "\n";
@@ -47,12 +46,6 @@ public class Paciente {
 	}
 	public void setSin(char sin) {
 		this.sin = sin;
-	}
-	public char getCondsau() {
-		return condsau;
-	}
-	public void setCondsau(char condsau) {
-		this.condsau = condsau;
 	}
 	public ArrayList<Medicamento> getMedicamentos() {
 		return medicamentos;

@@ -33,22 +33,7 @@ public class Principal {
 				Medicamento d =  Ultil.selecionaMedicamento(medicamentos);
 				a.getMedicamentos().add(d);
 				
-				
-				
-				
-				//String resultPac = "Pacientes cadastrados\n";
-				//for(Paciente p: pacientes) {
-					//resultPac += p.exibirDadosPac();}
-				//int Npac; 
-				//Npac = Integer.parseInt(JOptionPane.showInputDialog(null, resultPac + "para qual paciente? "));
-				 
-				//char Npac = JOptionPane.showInputDialog(  resultPac + "Para qual paciente:"  ).toUpperCase().charAt(0);
-				
-				//String resultMed = "Medicamentos cadastrados\n";
-				//for(Medicamento m: medicamentos) {
-					//resultMed += m.exibirDadosMed();}
-				//char Nmed = JOptionPane.showInputDialog(  resultMed + "Qual Medicamento:"  ).toUpperCase().charAt(0);
-				//pacientes.get(Npac).adicionaMed (medicamentos.get(Nmed));
+			
 			}
 			else if (op == 4) {
 				String resultPac = "Pacientes cadastrados\n\n";
