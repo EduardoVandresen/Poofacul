@@ -4,16 +4,25 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import exercicioCondominio.Apartamento;
+
 public class principal {
 
 	public static void main(String[] args) {
 	ArrayList<Time> lista = new ArrayList<Time>();
+	
 		
 		String menu = "1 - Cadastrar\n"
 				+ "2 - Listar todos jogadores de um time\n"
 				+ "3 - Verificar artilheiro do campeonato\n"
 				+ "4 - Verificar qual time fez mais gols no campeonato\n\n"
 				+ "5 - Sair";	
+		public static int numeroAp() {
+			int con = 0;
+			for(Apartamento a: apartamentos) {		
+				con ++;
+			}
+			return con;
 		int op = 0;
 		
 		do {
